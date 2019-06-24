@@ -4,6 +4,7 @@ import org.apache.tomcat.util.codec.binary.Base64;
 import org.bouncycastle.jce.provider.BouncyCastleProvider;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.stereotype.Component;
 
 import javax.crypto.Cipher;
 import javax.crypto.spec.IvParameterSpec;
@@ -21,6 +22,7 @@ import java.security.Security;
  * @version V1.0
  *
  */
+@Component
 public class AESUtil {
 
 	private static final Logger LOGGER = LoggerFactory.getLogger(AESUtil.class);
